@@ -18,7 +18,9 @@ The data was obtained from Kaggle and can be found using this link: https://www.
 ## Pipeline Overivew
 
 The structure of the pipeline can be found here:
-(Insert pipeline graph)
+
+<img width="2692" height="1093" alt="Screenshot 2025-11-07 213854" src="https://github.com/user-attachments/assets/586af926-fc7e-43e2-9ccc-d05dc8fcd857" />
+
 
 This pipeline performs the following tasks:
 
@@ -60,12 +62,13 @@ Remove all intermediate datasets (i.e., datasets from pre-merge transformations,
 
 This is the performance of the last run of the pipeline:
 
-(insert pipeline performance)
+<img width="2693" height="1130" alt="Screenshot 2025-11-07 214016" src="https://github.com/user-attachments/assets/4a52ae35-90a3-4be4-87f3-e56586d12424" />
 
 ## Analysis
 
 Here is the plot generated for the analysis:
 
-(insert plot)
+<img width="1000" height="600" alt="revenue_by_category_plot" src="https://github.com/user-attachments/assets/c5d63986-1995-4afa-8f81-980d16cf54a4" />
+
 
 Based on this plot, tablets and accessories generate the most revenue. Tablets may be popular because they are the perfect mix of computer and phone. They provide a wider screen than a phone, but the screen is still small enough to be portable. As for accessories, it's very common for people to by accessories for their devices because it's a way for them to express themselves.
