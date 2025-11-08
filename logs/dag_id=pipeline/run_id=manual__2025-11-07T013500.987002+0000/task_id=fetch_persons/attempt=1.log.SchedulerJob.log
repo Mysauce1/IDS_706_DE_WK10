@@ -1,0 +1,1 @@
+[2025-11-07T01:35:04.088+0000] {scheduler_job_runner.py:780} ERROR - Executor reports task instance <TaskInstance: pipeline.fetch_persons manual__2025-11-07T01:35:00.987002+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

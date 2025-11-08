@@ -1,0 +1,14 @@
+[2025-11-07T21:08:52.382+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.fetch_products manual__2025-11-07T21:08:40.597502+00:00 [queued]>
+[2025-11-07T21:08:52.420+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.fetch_products manual__2025-11-07T21:08:40.597502+00:00 [queued]>
+[2025-11-07T21:08:52.422+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-11-07T21:08:52.464+0000] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): fetch_products> on 2025-11-07 21:08:40.597502+00:00
+[2025-11-07T21:08:52.494+0000] {standard_task_runner.py:60} INFO - Started process 39375 to run task
+[2025-11-07T21:08:52.507+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'fetch_products', 'manual__2025-11-07T21:08:40.597502+00:00', '--job-id', '209', '--raw', '--subdir', 'DAGS_FOLDER/script.py', '--cfg-path', '/tmp/tmpyjk_c2w2']
+[2025-11-07T21:08:52.518+0000] {standard_task_runner.py:88} INFO - Job 209: Subtask fetch_products
+[2025-11-07T21:08:52.828+0000] {task_command.py:423} INFO - Running <TaskInstance: pipeline.fetch_products manual__2025-11-07T21:08:40.597502+00:00 [running]> on host 62f94235b2dc
+[2025-11-07T21:08:53.219+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='fetch_products' AIRFLOW_CTX_EXECUTION_DATE='2025-11-07T21:08:40.597502+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-07T21:08:40.597502+00:00'
+[2025-11-07T21:08:53.238+0000] {logging_mixin.py:188} INFO - products.csv found at /opt/***/data/products.csv
+[2025-11-07T21:08:53.244+0000] {python.py:202} INFO - Done. Returned value was: /opt/***/data/products.csv
+[2025-11-07T21:08:53.355+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=fetch_products, execution_date=20251107T210840, start_date=20251107T210852, end_date=20251107T210853
+[2025-11-07T21:08:53.471+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-11-07T21:08:53.571+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

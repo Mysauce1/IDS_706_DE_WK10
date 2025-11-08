@@ -1,0 +1,14 @@
+[2025-11-07T12:14:12.797+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.remove_product_launch_date manual__2025-11-07T12:14:08.774940+00:00 [queued]>
+[2025-11-07T12:14:12.811+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.remove_product_launch_date manual__2025-11-07T12:14:08.774940+00:00 [queued]>
+[2025-11-07T12:14:12.812+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-11-07T12:14:12.830+0000] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): remove_product_launch_date> on 2025-11-07 12:14:08.774940+00:00
+[2025-11-07T12:14:12.838+0000] {standard_task_runner.py:60} INFO - Started process 33120 to run task
+[2025-11-07T12:14:12.844+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'remove_product_launch_date', 'manual__2025-11-07T12:14:08.774940+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/script.py', '--cfg-path', '/tmp/tmpt_i2s03y']
+[2025-11-07T12:14:12.847+0000] {standard_task_runner.py:88} INFO - Job 129: Subtask remove_product_launch_date
+[2025-11-07T12:14:12.941+0000] {task_command.py:423} INFO - Running <TaskInstance: pipeline.remove_product_launch_date manual__2025-11-07T12:14:08.774940+00:00 [running]> on host 62f94235b2dc
+[2025-11-07T12:14:13.095+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='remove_product_launch_date' AIRFLOW_CTX_EXECUTION_DATE='2025-11-07T12:14:08.774940+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-07T12:14:08.774940+00:00'
+[2025-11-07T12:14:13.121+0000] {logging_mixin.py:188} INFO - Filtered US stores saved to /opt/***/data/product_no_launch.csv
+[2025-11-07T12:14:13.123+0000] {python.py:202} INFO - Done. Returned value was: /opt/***/data/product_no_launch.csv
+[2025-11-07T12:14:13.153+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=remove_product_launch_date, execution_date=20251107T121408, start_date=20251107T121412, end_date=20251107T121413
+[2025-11-07T12:14:13.218+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-11-07T12:14:13.243+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

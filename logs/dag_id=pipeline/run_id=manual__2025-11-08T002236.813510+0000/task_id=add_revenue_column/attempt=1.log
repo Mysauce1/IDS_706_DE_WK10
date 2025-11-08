@@ -1,0 +1,14 @@
+[2025-11-08T00:23:51.857+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.add_revenue_column manual__2025-11-08T00:22:36.813510+00:00 [queued]>
+[2025-11-08T00:23:51.905+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.add_revenue_column manual__2025-11-08T00:22:36.813510+00:00 [queued]>
+[2025-11-08T00:23:51.907+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-11-08T00:23:51.965+0000] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): add_revenue_column> on 2025-11-08 00:22:36.813510+00:00
+[2025-11-08T00:23:52.005+0000] {standard_task_runner.py:60} INFO - Started process 41640 to run task
+[2025-11-08T00:23:52.023+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'add_revenue_column', 'manual__2025-11-08T00:22:36.813510+00:00', '--job-id', '280', '--raw', '--subdir', 'DAGS_FOLDER/script.py', '--cfg-path', '/tmp/tmps__z6qpa']
+[2025-11-08T00:23:52.040+0000] {standard_task_runner.py:88} INFO - Job 280: Subtask add_revenue_column
+[2025-11-08T00:23:52.520+0000] {task_command.py:423} INFO - Running <TaskInstance: pipeline.add_revenue_column manual__2025-11-08T00:22:36.813510+00:00 [running]> on host 62f94235b2dc
+[2025-11-08T00:23:53.127+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='add_revenue_column' AIRFLOW_CTX_EXECUTION_DATE='2025-11-08T00:22:36.813510+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-08T00:22:36.813510+00:00'
+[2025-11-08T00:24:05.050+0000] {logging_mixin.py:188} INFO - Revenue column added and saved to /opt/***/data/intermediate_data/apple_data.csv
+[2025-11-08T00:24:05.092+0000] {python.py:202} INFO - Done. Returned value was: /opt/***/data/intermediate_data/apple_data.csv
+[2025-11-08T00:24:05.204+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=add_revenue_column, execution_date=20251108T002236, start_date=20251108T002351, end_date=20251108T002405
+[2025-11-08T00:24:05.349+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-11-08T00:24:05.458+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

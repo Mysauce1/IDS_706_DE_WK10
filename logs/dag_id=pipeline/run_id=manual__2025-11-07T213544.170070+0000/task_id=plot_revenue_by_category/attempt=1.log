@@ -1,0 +1,14 @@
+[2025-11-07T21:37:16.413+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.plot_revenue_by_category manual__2025-11-07T21:35:44.170070+00:00 [queued]>
+[2025-11-07T21:37:16.446+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.plot_revenue_by_category manual__2025-11-07T21:35:44.170070+00:00 [queued]>
+[2025-11-07T21:37:16.448+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2025-11-07T21:37:16.491+0000] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): plot_revenue_by_category> on 2025-11-07 21:35:44.170070+00:00
+[2025-11-07T21:37:16.513+0000] {standard_task_runner.py:60} INFO - Started process 40189 to run task
+[2025-11-07T21:37:16.522+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'plot_revenue_by_category', 'manual__2025-11-07T21:35:44.170070+00:00', '--job-id', '249', '--raw', '--subdir', 'DAGS_FOLDER/script.py', '--cfg-path', '/tmp/tmp05jdp8v8']
+[2025-11-07T21:37:16.531+0000] {standard_task_runner.py:88} INFO - Job 249: Subtask plot_revenue_by_category
+[2025-11-07T21:37:16.740+0000] {task_command.py:423} INFO - Running <TaskInstance: pipeline.plot_revenue_by_category manual__2025-11-07T21:35:44.170070+00:00 [running]> on host 62f94235b2dc
+[2025-11-07T21:37:17.139+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='plot_revenue_by_category' AIRFLOW_CTX_EXECUTION_DATE='2025-11-07T21:35:44.170070+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-07T21:35:44.170070+00:00'
+[2025-11-07T21:37:19.470+0000] {logging_mixin.py:188} INFO - Revenue plot saved to /opt/***/data/results/revenue_by_category_plot.png
+[2025-11-07T21:37:19.476+0000] {python.py:202} INFO - Done. Returned value was: /opt/***/data/results/revenue_by_category_plot.png
+[2025-11-07T21:37:19.648+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=plot_revenue_by_category, execution_date=20251107T213544, start_date=20251107T213716, end_date=20251107T213719
+[2025-11-07T21:37:19.863+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-11-07T21:37:20.103+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
